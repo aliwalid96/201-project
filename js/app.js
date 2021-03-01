@@ -1,27 +1,43 @@
-'use strict'
+'use strict';
 let userName=prompt("enter your name ");
 alert("you are welcome mr "+userName)
 alert("please answer the next question with yes or no");
-let learning=prompt("do you think the programming is hard ");
-let university=prompt("do you think if you didnt study in the university you cant learn it");
-let studying=prompt("do you want to start learning  ");
-let improvement =prompt("do you want to ipmrove your live ");
-let understood=prompt("did you understand the rules to became programmer  ")
-checker(learning);
+let myAge=prompt("do you know how old am I  ");
+let university=prompt("do you think I study in the university");
+let studying=prompt("do you think I can study alone  ");
+let improvement =prompt("do you think I am self learner ");
+let favcolor=prompt("do you know if the green is my  favourate color  ")
+checker(myAge);
 checker(university);
 checker(studying);
 checker(improvement);
-checker(understood);
+checker(favcolor);
+
+truthchecker(myAge);
+truthchecker(university);
+truthchecker(studying);
+truthchecker(improvement);
+truthchecker(favcolor);
 
 
 
+alert("you answered "+thetrue +"truth and "+(5-thetrue)+"with wrong answer")
+function truthchecker(answer){
+    let thetrue=0;
+    if(answer.toLowerCase()=="yes"||answer.toLowerCase()=="y"){
+        thetrue ++
+    }
+
+
+}
 
 function checker(answer){
-   if(answer=="yes"||answer=="no"||answer=="y"||answer=="n"||answer.toUpperCase()=="yes"||answer.toUpperCase()=="no"||answer.toUpperCase()=="y"||answer.toUpperCase()=="n"){
+   if(answer.toLowerCase()=="yes"||answer.toLowerCase()=="no"||answer.toLowerCase()=="y"||answer.toLowerCase()=="n"){
      
       console.log("your answer is correct")
    }else{
-    alert("please change this answer  "+answer+"with yes or no  ") 
+    alert("please change this answer  " +answer+" with yes or no  ") ;
+    
    }
 
 }
