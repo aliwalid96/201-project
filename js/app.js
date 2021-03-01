@@ -1,4 +1,5 @@
 'use strict';
+let thetrue=0;
 let userName=prompt("enter your name ");
 alert("you are welcome mr "+userName)
 alert("please answer the next question with yes or no");
@@ -13,23 +14,8 @@ checker(studying);
 checker(improvement);
 checker(favcolor);
 
-truthchecker(myAge);
-truthchecker(university);
-truthchecker(studying);
-truthchecker(improvement);
-truthchecker(favcolor);
 
-
-
-alert("you answered "+thetrue +"truth and "+(5-thetrue)+"with wrong answer")
-function truthchecker(answer){
-    let thetrue=0;
-    if(answer.toLowerCase()=="yes"||answer.toLowerCase()=="y"){
-        thetrue ++
-    }
-
-
-}
+alert("you answer yes "+thetrue);
 
 function checker(answer){
    if(answer.toLowerCase()=="yes"||answer.toLowerCase()=="no"||answer.toLowerCase()=="y"||answer.toLowerCase()=="n"){
@@ -38,6 +24,10 @@ function checker(answer){
    }else{
     alert("please change this answer  " +answer+" with yes or no  ") ;
     
+    
    }
+   if(answer.toLowerCase()=="yes"||answer.toLowerCase()=="y"){
+      thetrue++;
+}
 
 }
