@@ -18,7 +18,7 @@ let myhoppy=["reading","swimming","sport"];
 
 
 for(let a=0;a<7;a++){
- let hopy=prompt("can you ges any of my  hoppies");
+ let hopy=prompt("can you guess any of my  hoppies");
 
 for(let i=1;i<4;i++){
    if(hopy==myhoppy[i]){
