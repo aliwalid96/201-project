@@ -13,17 +13,23 @@ let Weight=prompt("can guess what is my Weight ");
 let corectWeight=75;
 let myWeight=parseInt(Weight);
 
+
 let myhoppy=["reading","swimming","sport"];
-
-
+let hopy=prompt('can you guess any of my  hoppies');
 
 for(let a=0;a<7;a++){
- let hopy=prompt("can you guess any of my  hoppies");
 
-for(let i=1;i<4;i++){
-   if(hopy==myhoppy[i]){
+for(let i=1;i<myhoppy.length;i++){
+   if(hopy===myhoppy[i]){
    alert("you gused it ");
+   console.log("hello");
    a=8;
+   thetrue++;
+   break;
+}else{
+   hopy=prompt('can you guess any of my  hoppies');
+
+
 }
 }
 }
@@ -32,13 +38,14 @@ alert ("my hobby are   "+myhoppy);
 
 if(myWeight!=corectWeight){
    let counter=0;
-   while((myWeight!=corectWeight)&&counter<5){
+   while((myWeight!=corectWeight)&&counter<4){
       myWeight=prompt("can guess what is my Weight ");
       if(myWeight>50 && myWeight<60){
          alert("you are far");
       }else if(myWeight>61 && myWeight<80){
          if(myWeight=75){
             alert("you are corect") ;
+            thetrue++;
             counter=7;
 
          }else{
