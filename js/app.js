@@ -10,12 +10,21 @@ let improvement =prompt("do you think I am self learner ");
 let favcolor=prompt("do you know if the green is my  favourate color  ");
 
 let Weight=prompt("can guess what is my Weight ");
-let corectWeight=75;
 let myWeight=parseInt(Weight);
-
-
-let myhoppy=["reading","swimming","sport"];
+checkTheWeight(myWeight);
 let hopy=prompt('can you guess any of my  hoppies');
+hoppyChecker(hopy);
+
+
+
+
+
+
+
+function hoppyChecker(hopy){
+   
+let myhoppy=["reading","swimming","sport"];
+
 
 for(let a=0;a<7;a++){
 
@@ -33,7 +42,13 @@ for(let i=1;i<myhoppy.length;i++){
 }
 }
 }
+
 alert ("my hobby are   "+myhoppy);
+}
+
+
+function checkTheWeight(myWeight){ 
+   let corectWeight=75;
 
 
 if(myWeight!=corectWeight){
@@ -60,12 +75,10 @@ if(myWeight!=corectWeight){
    
 if(counter>5){
    alert("the correct is 75")
-}
-
 
 
 }
-
+}
 
 
 
@@ -90,4 +103,5 @@ function checker(answer){
       thetrue++;
 }
 
-}
+
+}}
